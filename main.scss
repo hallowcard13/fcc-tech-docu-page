@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+body{
+	background-color: #f7f8f9;
+	font-family: 'Exo 2', sans-serif;
+}
+.mobilemenuicon{
+	font-size:20px;
+	text-align: center;
+}
+.sectionwrapper{
+	background-color:#fff;
+	margin-top:70px;
+	padding:20px 10px;
+}
+.main-section{
+	margin: 10px 0 30px 0;
+	header{
+		font-size: 20px;
+		font-weight:600;
+	}
+	ul{
+		li{
+			margin: 10px 0;
+			text-align: justify;
+		}
+	}
+	p{
+		text-align: justify;
+	}
+}
+
+#menulist{
+	transition: all 1s;
+	transform: translate(-100%);
+	opacity: 0;
+	margin: 0;
+		padding:0;
+		position:fixed;
+		height: 100%;
+		z-index: 1;
+		background-color:#fff;
+		width: 80%;
+		top:0;
+		box-shadow:5px 1px 2px 2px rgba(119,119,119,0.5);
+}
+#navbar{
+	background-color:#fff;
+	position: fixed;
+		left:0;
+		z-index: 2;
+	width: 100%;
+	top:0;
+	box-shadow:10px 0 rgba(181,182,183, 0.5);
+	padding:10px 0;
+	box-shadow:5px 1px 2px 2px rgba(119,119,119,0.5);
+	header{
+		font-size: 20px;
+		text-align: center;
+		width: 100%;
+		font-weight: 600;
+	}
+	ul{
+
+		li{
+			list-style: none;
+			margin: 10px 0;
+			border-bottom:1px dashed #e1e4e8;
+			padding:5px 0 5px 5px;
+			a{
+				text-decoration: none;
+				color:#000;
+				font-size: 18px;
+				font-weight: 600;
+			}
+			&:last-child{
+				border-bottom:none;
+			}
+		}
+	}
+}
+.codebox{
+	background-color:#000000;
+	padding:10px;
+	color:#99ff6d;
+}
+.codecomment{
+	color:#dee0de;
+}
+.textind1{
+	text-indent: 10px;
+}
+
+@media(min-width: 992px){
+	.sectionwrapper{
+		margin-top: -1px;
+	}
+	.mobilemenuicon{
+		display: none;
+	}
+	#menulist{
+		opacity: 1;
+		transform: none;
+		position:relative;
+		box-shadow:none;
+		width: auto;
+		border-top:2px solid #000;
+	}
+	#navbar{
+	position: fixed;
+	left: auto;
+	z-index: 2;
+	width: 17.8%;
+	box-shadow:10px 0 rgba(181,182,183, 0.5);
+	padding:10px 0;
+	box-shadow:none;
+		header{
+			font-size: 25px;
+			text-align: center;
+			width: inherit;
+			font-weight: 600;
+		}
+		ul{
+			li{
+				padding:5px;
+			}
+		}
+	}
+}
